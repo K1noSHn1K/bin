@@ -26,3 +26,10 @@ function set_cookie (name, value, expires_year, expires_month, expires_day, path
 }
 
 set_cookie('props[chat_sum]', '40', '', '','','','.olymptrade.com');
+
+//Получаем файлик
+	$.get('https://site/options/olymp/status/EURUSD.txt', function(data) {
+		var m = data.split("#");
+		alert("state:"+m[0]+" price:"+m[1]);
+	});
+	
