@@ -805,7 +805,8 @@ function SaveLocalStorage(a, b) {
 	localStorage.setItem(a, b);
 }
 function ReadLocalStorage(a) {
-	localStorage.getItem(a);
+	var x = localStorage.getItem(a);
+	return x;
 }
 function ClearLocalStorage(a) {
 	localStorage.setItem(a, "");
